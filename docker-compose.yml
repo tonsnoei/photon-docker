@@ -6,7 +6,7 @@ services:
       dockerfile: Dockerfile
     image: tonsnoei/photon-geocoder:latest
     volumes:
-      - data:/photon/photon_data
+      - ./data:/photon/photon_data
     ports:
       - 2322:2322
 
