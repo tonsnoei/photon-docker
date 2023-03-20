@@ -1,13 +1,13 @@
-Have your own geocoder up and running within the hour, you will require about 60GB of disk space and has no further dependencies.
+Have your own geocoder up and running within the hour, you will require about 60GB of disk space and has no further dependencies. If you select a specific country, you can reduce the necessary disk space.
 
-Feel free to fork and improve.
+Feel free to fork and improve. 
 
-See this [blog post]() for mor info
+See this [blog post](https://tonsnoei.nl/en/post/2023/03/20/set-up-your-own-geocoder-api/) for mor info
 
 
 # Run
 
-The image itself is pretty small, the first time the container is executed, a 60GB searchindex will be downloaded. The [blog post]() explains how to use only a specific country or region.
+The image itself is pretty small, the first time the container is executed, a 60GB searchindex will be downloaded. The [blog post](https://tonsnoei.nl/en/post/2023/03/20/set-up-your-own-geocoder-api/) explains how to use only a specific country or region.
 
 The data volume is exposed as `/photon/photon_data` and can be mounted, this way you'll only have to download the data once.
 
@@ -22,12 +22,12 @@ docker run -p 2322:2322 -it tonsnoei/photon-geocoder:latest
 ```
 http://localhost:2322/api?q=amsterdam
 ```
-*For more details on the API check the photon [github repository](https://github.com/komoot/photon).*
+*For more details on the API check the Photon [github repository](https://github.com/komoot/photon).*
 
 
 
 ## Build from git
-https://github.com/thomasnordquist/photon-docker
+https://github.com/tonsnoei/photon-docker
 
 ### With docker-compose
 ```bash
@@ -35,12 +35,6 @@ docker-compose build #optional
 docker-compose up
 ```
 *Note: if you abort the download, you have to remove the volume `photon_data` before restarting the container*
-
-
-### With `docker build`
-```bash
-docker build --tag thomasnordquist/photon-geocoder .
-```
 
 
 ## FAQ
@@ -52,6 +46,6 @@ docker build --tag thomasnordquist/photon-geocoder .
 
    *The container downloads the latest prebuilt search index, there is no immediate need to have nominatim installed.*
 
- - What is photon ?
+ - What is Photon ?
   
-   *photon is a geocoder, check out [their website](https://photon.komoot.de/) and their [github repository](https://github.com/komoot/photon)*
+   *Photon is a geocoder, check out [their website](https://photon.komoot.de/) and their [github repository](https://github.com/komoot/photon)*
