@@ -2,7 +2,7 @@ Have your own geocoder up and running within the hour, you will require about 60
 
 Feel free to fork and improve. 
 
-See this [blog post](https://tonsnoei.nl/en/post/2023/03/20/set-up-your-own-geocoder-api/) for mor info
+See this [blog post](https://tonsnoei.nl/en/post/2023/03/20/set-up-your-own-geocoder-api/) for more info.
 
 
 # Run
